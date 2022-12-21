@@ -1,8 +1,8 @@
 
 const textInput = document.querySelector("#validation-input");
-textInput.classList = '';
+textInput.className = '';
 textInput.addEventListener("blur", () => {
-  textInput.classList = textInput.value.length === 6 ? 'valid' : 'invalid'
+  textInput.className = textInput.value.length === 6 ? 'valid' : 'invalid'
 console.log(textInput.value);
 });
 
