@@ -4,16 +4,20 @@ const formPass = document.querySelector("label [type='password']");
 
 form.addEventListener("submit", handleSubmit);
 
-function handleSubmit(event) {
-  event.preventDefault();
-  if (formEmail.value === "" || formPass.value === "") {
-    return console.log("Please fill in all the fields!");
-  }
+// const userData = { email: formEmail.value, password: formPass.value }
+//   const {email, password } = userData;
 
-  const userData = { email: formEmail.value, password: formPass.value }
-  const {email, password } = userData;
-    
-  alert(`Email: ${email} Password: ${password}`)
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (formEmail.value === "" || formPass.value === "") {
+      alert("Please fill in all the fields!")
+ 
+    }else{
+      alert(`Email: ${formEmail.value} Password: ${formPass.value}`)
+    }
+ 
+  
   
   console.log(userData)
   console.log(email)
