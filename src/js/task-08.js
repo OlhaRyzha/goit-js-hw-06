@@ -4,24 +4,24 @@ const formPass = document.querySelector("label [type='password']");
 
 form.addEventListener("submit", handleSubmit);
 
-// const userData = { email: formEmail.value, password: formPass.value }
-//   const {email, password } = userData;
+
 
   function handleSubmit(event) {
     event.preventDefault();
+    const {
+      elements: { email, password }
+    } = event.currentTarget;
 
-    if (formEmail.value === "" || formPass.value === "") {
-      alert("Please fill in all the fields!")
+    if (email.value === "" || password.value === "") {
+      alert("Заповніть, будь ласка, всі поля!")
  
     }else{
-      alert(`Email: ${formEmail.value} Password: ${formPass.value}`)
+      alert(`Email: ${email.value} Password: ${password.value}`)
     }
  
   
   
-  console.log(userData)
-  console.log(email)
-  console.log(password)
+
 
 
   event.currentTarget.reset();
