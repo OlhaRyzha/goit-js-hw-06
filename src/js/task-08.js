@@ -21,5 +21,5 @@ form.addEventListener("submit", handleSubmit);
  
   alert (email.value === "" || password.value === ""  ? "Заповніть, будь ласка, всі поля!" : `Email: ${email.value} Password: ${password.value}`)
 
-  event.currentTarget.reset();
+  
 }
