@@ -12,14 +12,14 @@ form.addEventListener("submit", handleSubmit);
       elements: { email, password }
     } = event.currentTarget;
 
-    // if (email.value === "" || password.value === "") {
-    //   alert("Заповніть, будь ласка, всі поля!")
+    if (email.value === "" || password.value === "") {
+      alert("Заповніть, будь ласка, всі поля!")
  
-    // }else{
-    //   alert(`Email: ${email.value} Password: ${password.value}`)
-    // }
+    }else{
+     
+      console.log(`Email: ${email.value} Password: ${password.value}`)
+      event.currentTarget.reset();
+    }
  
-  alert (email.value === "" || password.value === ""  ? "Заповніть, будь ласка, всі поля!" : `Email: ${email.value} Password: ${password.value}`)
 
-  
 }
